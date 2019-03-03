@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+<!--501-0 Added this line to title my with my info-->
+  <title>My Name Is | Jimmy De Jesus</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,30 +24,33 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+
+      <!--501-0 This line makes the main homme button navigate you back to the "Home" page which is "My Name Is | Jimmy De Jesus"-->
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">My Name Is | Jimmy De Jesus</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+
+          <!--501.0 Added extra nav class to trigger scrolling function for the extra sections we added-->
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#about">About</a> </li>
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>     </li>
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#education">Education</a> </li>
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#skills">Skills</a> </li>
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#interests">Interests</a> </li>
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#awards">Awards</a> </li>
+          <li class="nav-item">  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a> </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
+  <header class="bg-secondary text-white">
     <div class="container text-center">
-      <h1>Welcome to Suck My Ass</h1>
-      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      <img class="rounded-circle img-fluid" src="http://via.placeholder.com/150x150" alt="Jimmy De Jesus">
+      <h1>Jimmy De Jesus</h1>
+      <p class="lead">"There is only one happiness in this life, to love and be loved." George Sand.</p>
     </div>
   </header>
 
@@ -54,7 +58,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About this page</h2>
+
+<!--501-0 Added this line to title my section with my info-->
+          <h2>Who I am...</h2>
           <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
           <ul>
             <li>Clickable nav links that smooth scroll to page sections</li>
@@ -67,17 +73,72 @@
     </div>
   </section>
 
-  <section id="services" class="bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Services we offer</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!--501-0 This creates a designation for our experience info using bootstarp
+      P.S we used class="bg-light" to create a lighter area in the background of this area-->
+  <section id="experience" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>What I have done...</h2>
+                        <p class="lead"><strong>Experience:</strong> Still a Student.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--501-0 This creates a designation for our education info using bootstarp-->
+        <section id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>What I have learned...</h2>
+                        <p class="lead"><strong>Education: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--501-0 This creates a designation for our skills info using bootstarp
+                  P.S we used class="bg-light" to create a lighter area in the background of this area-->
+
+        <section id="skills" class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>What I can do...</h2>
+                        <p class="lead"><strong>Skills: </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--501-0 This creates a designation for our interests info using bootstarp-->
+        <section id="interests">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2>What inspiers me...</h2>
+                        <p class="lead"><strong>Interests:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--501-0 This creates a designation for our awards info using bootstarp
+              P.S we used class="bg-light" to create a lighter area in the background of this area-->
+        <section>
+          <section id = "awards" class="bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2> What makes me proud...<h2>
+                    <p class="lead"><storng>Awards:</strong> Tropies and achivments
+               </div>
+            </div>
+          </div>
+        </section>
+
+        <!--501-0 This creates a designation for our contact info using bootstarp-->
   <section id="contact">
     <div class="container">
       <div class="row">
