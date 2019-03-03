@@ -17,4 +17,5 @@ Github Repo: https://github.com/JimmyDeJesus/5xx-NEW/tree/master
   -Created a secondary background color of white class in the header on line 49
   -added body nav's for each of the new sections we added in the index.html file for scroll navigations functionality
   -added a nav tag to the main home button for scrolling functionality.
+  -added a placeholder for a image (150 x 150) useing bootstrap template found through: "http://via.placeholder.com/150x150"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
