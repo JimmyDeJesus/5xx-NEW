@@ -1,7 +1,7 @@
 # 5xx-NEW
 iop-5xx project redux 2.0
 
-
+Development Site: https://5xx-new.jd09524.com/
 Github Repo: https://github.com/JimmyDeJesus/5xx-NEW/tree/master
 
 ## 005.006 Merge to Master | Assignment
@@ -21,4 +21,14 @@ Github Repo: https://github.com/JimmyDeJesus/5xx-NEW/tree/master
   -added body nav's for each of the new sections we added in the index.html file for scroll navigations functionality
   -added a nav tag to the main home button for scrolling functionality.
   -added a placeholder for a image (150 x 150) useing bootstrap template found through: "http://via.placeholder.com/150x150"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## 502.000 | Utilizing WordPress to create a more connected     website. | Assignment
+### (501.005)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  -we added a app.js file
+    .updated scrolling onload event to be functional
+
+  -added main element to index.html  
+  -added the link to the app.js and fontawsome in the index.html
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
