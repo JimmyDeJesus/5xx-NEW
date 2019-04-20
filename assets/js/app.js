@@ -1,66 +1,66 @@
 /*502.0 adding styles to the preloader, we also used the header over agian to make the fade out happen*/
-$("body").prepend('<div class=text-white style=position:fixed;top:0;bottom:0;width:100%;z-index:99999999;padding-top:12%;background-color:rgba(87,87,87,.95);" id="cover-page"><div id="cover-page-con" class="container text-center"style="opacity:100%;"><img alt="Jimmy De Jesus"class="img-fluid rounded-circle"src=http://via.placeholder.com/150x150><h1>Jimmy De Jesus</h1><p class=lead>ENTERING ANOTHER DEMENTION...<p class=lead style=font-size:80%><i class="fa-1x fa-cog fa-spin fas"></i> Loading...</div></div>');
 
-var parentPageID = 135;
+$("body").prepend('<div class=text-white style=position:fixed;top:0;bottom:0;width:100%;z-index:99999999;padding-top:12%;background-color:rgba(87,87,87,.95);" id="cover-page"><div id="cover-page-con" class="container text-center"style="opacity:100%;"><img alt="Brian Savage"class="img-fluid rounded-circle"src=http://via.placeholder.com/150x150><h1>Brian Savage</h1><p class=lead>...inspired innovative technology leader & follower.<p class=lead style=font-size:80%><i class="fa-1x fa-cog fa-spin fas"></i> we are preparing your experiance now...</div></div>');
+
+const parentPageID = 176;
 
 window.onload = getContent();
 
 function getContent() {
-  $.ajax({
-    method: 'GET',
-    url: 'http://me.jd09524.com/wp-json/wp/v2/pages/?parent=' + parentPageID + '&order=asc&orderby=menu_order',
-    dataType: 'json',
-    success: function(data) {
-      if (data.length > 0) {
-        var thePage = '';
-        var theMenu = '<ul class="navbar-nav ml-auto">';
-        var className = '';
+    $.ajax({
+        method: 'GET',
+        url: 'https://me.inside-out-project.com/wp-json/wp/v2/pages/?parent=' + parentPageID + '&order=asc&orderby=menu_order',
+        dataType: 'json',
+        success: function (data) {
+            if (data.length > 0) {
+                var thePage = '';
+                var theMenu = '<ul class="navbar-nav ml-auto">';
+                var className = '';
 
-        data.forEach(function(item) {
-          if (item.slug === 'frequently-ask-questions') {
-            $("header").html(item.content.rendered);
-          } else {
+                data.forEach(function (item) {
+                    if (item.slug === 'home') {
+                        $("header").html(item.content.rendered);
+                    } else {
 
-            let isActive = (theMenu === null) ? ' active' : '';
-            theMenu = theMenu + '<li class="nav-item"> <a class="nav-link js-scroll-trigger' + isActive + '" href="#' + item.slug + '">' + item.title.rendered + '</a> </li>';
+                        let isActive = (theMenu === null) ? ' active' : '';
+                        theMenu = theMenu + '<li class="nav-item"> <a class="nav-link js-scroll-trigger' + isActive + '" href="#' + item.slug + '">' + item.title.rendered + '</a> </li>';
 
-            className = (className === '') ? ' class="bg-light"' : '';
-            thePage = thePage + '<section id="' + item.slug + '"' + className + '>' + item.content.rendered + '</section>';
+                        className = (className === '') ? ' class="bg-light"' : '';
+                        thePage = thePage + '<section id="' + item.slug + '"' + className + '>' + item.content.rendered + '</section>';
 
-          }
-        });
-        $("#navbarResponsive").html(theMenu + '</ul>');
-        $("main").html(thePage);
-      }
-    },
-    error: function() {
-      console.log('bad');
-    }
-  });
-  /*502.0 pauses the video load for about 2 seconds*/
+                    }
+                });
+                $("#navbarResponsive").html(theMenu + '</ul>');
+                $("main").html(thePage);
+            }
+        },
+        error: function () {
+            console.log('bad');
+        }
+    });
 
-  setTimeout(function() {
-    $("#cover-page").fadeOut(2000);
-    startScroll();
-    resizeDiv();
-  }, 2000);
+    setTimeout(function () {
+        $("#cover-page").fadeOut(2000);
+        startScroll();
+        resizeDiv();
+    }, 2000);
 
 }
 
-window.onresize = function(event) {
-  resizeDiv();
+window.onresize = function (event) {
+     resizeDiv();
 }
 
 function resizeDiv() {
-  let vpw = $(window).width();
-  let vph = $(window).height();
-  let navH = $('nav').height();
-  let footerH = $('nav').height();
-  let setvph = vph - navH;
-  $("section,header").css({
-    "height": setvph
-  });
-  $("header").css({
-    "margin-top": navH
-  });
+     let vpw = $(window).width();
+     let vph = $(window).height();
+     let navH = $('nav').height();
+     let footerH = $('nav').height();
+     let setvph = vph - navH;
+     $("section,header").css({
+          "height": setvph
+     });
+     $("header").css({
+          "margin-top": navH
+     });
 }
