@@ -4,6 +4,14 @@ html {
   font-size:100%;
 }
 
-.navbar-brand {
-  font-size: 120%;
+div#profileImg {
+  margin-top: 150px;
+  height: 150px;
+  width: 150px;
+  background-color: bisque;
+  margin:auto;
+}
+
+section {
+  padding: 30px 10px;
 }
